@@ -43,7 +43,7 @@ import android.widget.RelativeLayout;
 public class ArcMenu extends RelativeLayout {
     private ArcLayout mArcLayout;
 
-    private ImageView mHintView;
+    //private ImageView mHintView;
 
     public ArcMenu(Context context) {
         super(context);
@@ -69,7 +69,7 @@ public class ArcMenu extends RelativeLayout {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                    mHintView.startAnimation(createHintSwitchAnimation(mArcLayout.isExpanded()));
+                    //mHintView.startAnimation(createHintSwitchAnimation(mArcLayout.isExpanded()));
                     mArcLayout.switchState(true);
                 }
 
@@ -77,7 +77,7 @@ public class ArcMenu extends RelativeLayout {
             }
         });
 
-        mHintView = (ImageView) findViewById(R.id.control_hint);
+        //mHintView = (ImageView) findViewById(R.id.control_hint);
     }
 
     private void applyAttrs(AttributeSet attrs) {
@@ -140,7 +140,7 @@ public class ArcMenu extends RelativeLayout {
                 }
 
                 mArcLayout.invalidate();
-                mHintView.startAnimation(createHintSwitchAnimation(true));
+                //mHintView.startAnimation(createHintSwitchAnimation(true));
 
                 if (listener != null) {
                     listener.onClick(viewClicked);

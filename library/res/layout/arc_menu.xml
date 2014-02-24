@@ -15,16 +15,21 @@
         android:id="@+id/control_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:background="@drawable/home_button" >
+        android:layout_centerInParent="true" >
 
-<!--         <ImageView -->
-<!--             android:id="@+id/control_hint" -->
-<!--             android:layout_width="wrap_content" -->
-<!--             android:layout_height="wrap_content" -->
-<!--             android:layout_gravity="center" -->
-<!--             android:duplicateParentState="true" -->
-<!--             android:src="@drawable/composer_icn_plus" /> -->
+        <Button
+            android:id="@+id/home_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/home_icon" />
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/control_hint" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_gravity="center" -->
+        <!-- android:duplicateParentState="true" -->
+        <!-- android:src="@drawable/composer_icn_plus" /> -->
     </FrameLayout>
 
 </merge>
