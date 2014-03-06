@@ -7,7 +7,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        custom:childSize="44dp"
+        custom:childSize="44px"
         custom:fromDegrees="270.0"
         custom:toDegrees="360.0" />
 
@@ -15,21 +15,16 @@
         android:id="@+id/control_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true" >
+        android:layout_centerInParent="true"
+        android:background="@drawable/composer_button" >
 
-        <Button
-            android:id="@+id/home_button"
+        <ImageView
+            android:id="@+id/control_hint"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/composer_button" />
-
-        <!-- <ImageView -->
-        <!-- android:id="@+id/control_hint" -->
-        <!-- android:layout_width="wrap_content" -->
-        <!-- android:layout_height="wrap_content" -->
-        <!-- android:layout_gravity="center" -->
-        <!-- android:duplicateParentState="true" -->
-        <!-- android:src="@drawable/composer_icn_plus" /> -->
+            android:layout_gravity="center"
+            android:duplicateParentState="true"
+            android:src="@drawable/composer_icn_plus" />
     </FrameLayout>
 
 </merge>
