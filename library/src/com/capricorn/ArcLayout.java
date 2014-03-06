@@ -46,9 +46,9 @@ public class ArcLayout extends ViewGroup {
      */
     private int mChildSize;
 
-    private int mChildPadding = 5;
+    private int mChildPadding = 15;
 
-    private int mLayoutPadding = 10;
+    private int mLayoutPadding = 20;
 
     public static final float DEFAULT_FROM_DEGREES = 270.0f;
 
@@ -58,7 +58,7 @@ public class ArcLayout extends ViewGroup {
 
     private float mToDegrees = DEFAULT_TO_DEGREES;
 
-    private static final int MIN_RADIUS = 100;
+    private static final int MIN_RADIUS = 175;
 
     /* the distance between the layout's center and any child's center */
     private int mRadius;

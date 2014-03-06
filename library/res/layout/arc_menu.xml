@@ -16,7 +16,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:background="@drawable/composer_button" >
+        android:background="@drawable/home_icon">
+<!--         android:background="@drawable/composer_button" > -->
 
         <ImageView
             android:id="@+id/control_hint"
@@ -24,7 +25,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:duplicateParentState="true"
-            android:src="@drawable/composer_icn_plus" />
+            android:src="@drawable/composer_icn_plus"
+            android:visibility="gone" />
     </FrameLayout>
 
 </merge>
