@@ -69,41 +69,42 @@ public class ArcMenu extends RelativeLayout {
 
 		final ViewGroup controlLayout = (ViewGroup) findViewById(R.id.control_layout);
 
-		animation = new AlphaAnimation((float) 0.8, (float) 0.3); // Change
+		//objectAnimation = new ObjectAnimator();
+		//animation = new AlphaAnimation((float) 0.8, (float) 0.3); // Change
 																	// alpha
 																	// from
 																	// fully
 																	// visible
 																	// to
 																	// invisible
-		animation.setDuration(1000); // duration - half a second
-		animation.setInterpolator(new LinearInterpolator()); // do not alter
+		//animation.setDuration(1000); // duration - half a second
+		//animation.setInterpolator(new LinearInterpolator()); // do not alter
 																// animation
 																// rate
-		animation.setRepeatCount(Animation.INFINITE); // Repeat animation
+		//animation.setRepeatCount(Animation.INFINITE); // Repeat animation
 														// infinitely
-		animation.setRepeatMode(Animation.REVERSE); // Reverse animation at the
+		//animation.setRepeatMode(Animation.REVERSE); // Reverse animation at the
 													// end so the button will
 													// fade back in
-		controlLayout.startAnimation(animation);
-		objectAnimation.setDuration(1000);
-		objectAnimation.setInterpolator(new TimeInterpolator() {
-			
-			@Override
-			public float getInterpolation(float input) {
-				// TODO Auto-generated method stub
-				return 0;
-			}
-		});
-		mArcLayout.startAnimation(animation);
+		//controlLayout.startAnimation(animation);
+		//objectAnimation.setDuration(1000);
+//		objectAnimation.setInterpolator(new TimeInterpolator() {
+//			
+//			@Override
+//			public float getInterpolation(float input) {
+//				// TODO Auto-generated method stub
+//				return 0;
+//			}
+//		});
+		//mArcLayout.startAnimation(animation);
 		controlLayout.setClickable(true);
 		controlLayout.setOnTouchListener(new OnTouchListener() {
 
 			@Override
 			public boolean onTouch(View v, MotionEvent event) {
 				if (event.getAction() == MotionEvent.ACTION_DOWN) {
-					controlLayout.clearAnimation();
-					mArcLayout.clearAnimation();
+					//controlLayout.clearAnimation();
+					//mArcLayout.clearAnimation();
 					//mHintView.startAnimation(createHintSwitchAnimation(mArcLayout.isExpanded()));
 					mArcLayout.switchState(true);
 				}
@@ -113,6 +114,7 @@ public class ArcMenu extends RelativeLayout {
 		});
 
 		mHintView = (ImageView) findViewById(R.id.control_hint);
+		//mHintView = (ImageView) findViewById(R.id.control_layout);
 	}
 
 	private void applyAttrs(AttributeSet attrs) {
